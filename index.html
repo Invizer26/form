@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/mask.js"></script>
+    <script src="js/popUp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="popUpBtn" class="btn-red">
+            Кликни
+        </button>
+    </div>
+    <div class="popUp hidden" id="popUp">
+        <div class="popUp__content">
+            <img src="images/cross.png" alt="" class="cross" id="close">
+            <div class="info">
+                <div class="info__text">
+                    <b>Получите набор файлов для руководителя:</b>
+                </div>
+                <div class="info__files">
+                    <img src="images/doc.png" alt="">
+                    <img src="images/xls.png" alt="">
+                    <img src="images/pdf.png" alt="">
+                    <img src="images/pdf.png" alt="">
+                    <img src="images/pdf.png" alt="">
+                    <img src="images/pdf.png" alt="">
+                    <img src="images/pdf.png" alt="">
+                </div>
+                <div class="info__img">
+                    <img src="images/img1.png" alt="">
+                    <img src="images/img2.png" alt="">
+                    <img src="images/img3.png" alt="">
+                </div>
+            </div>
+            <form action="form.php" method="post" class="form" id="popUpForm" name="popUpForm">
+                <label for="email">Введите Email для получения файлов:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <label for="phone">Введите телефон для подтверждения доступа:</label>
+                <input name="phone" id="phone" placeholder="+7 (000) 000-00-00" required >
+                <button type="submit" class="form__submit">Скачать файлы <img src="images/pointer.png" alt=""></button>
+                <div class="form__fileSize">
+                    <span>PDF 4.7 MB</span><span>DOC 0.8 MB</span><span>XLS 1.2</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
